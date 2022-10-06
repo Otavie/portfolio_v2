@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Satisfy&family=Supermercado+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Oxanium', cursive;
+    font-family: 'Poppins', sans-serif                                                                                                                                                                                          ;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+section:not(.first) {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second{ background-color:rgb(6, 73, 135);}
+.third{ background-color:crimson; }
+.last{ background-color:rgba(0, 0, 0, 0.808); }
+.last{ background-color:rgb(0, 191, 255); }
+
+.second .inner{
+    padding: 0 2rem;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.lt, .gt{
+    color: rgb(126, 252, 0);
+    text-shadow: 0px 0.063rem .3rem rgba(253, 253, 253, 0.613);
+    position: relative;
+    top:-5px;
+}
+
+.writeup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.inner .writeup h1{
+    color: rgba(255, 255, 255, 0.37);
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 1px;
+}
+
+.inner .writeup h3{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.897);
+    letter-spacing: 0.4rem;
+    margin-top: -2.25rem;    
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 0 .125rem rgba(255, 255, 255, 0.962);
+}
+
+.letterU{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 0 .125rem rgba(255, 255, 255, 0.962);
+}
+
+.vertical_line{
+    color: rgba(255, 255, 255, 0.74);
+    font-weight: bold;
+    text-shadow: 0px 0.126rem 1.25rem rgba(255, 255, 255, 0.486);
+}
+
+.inner h1{
+    font-family: 'Oxanium', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.623);
+    text-shadow: 0px 0.063rem 1.25rem rgba(0, 0, 0, 0.486);
+}
+
+.para_content{
+    font-size: 1.15rem;
+    text-shadow: 0px 0.063rem 1.25rem rgba(0, 0, 0, 1);
+    line-height: 5vh;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(220, 227, 233);
+}
+
+#first, #second{
+    height: 100vh;
+    width: 100vw;
+}
+
+.first img{
+    width: 7rem;
+    position: fixed;
+    top:1rem;
+    left: 1rem;
+    box-shadow: 0px 0.063rem 0.25rem rgba(255, 255, 255, 0.61);
+    border: none;
+    border-radius: 25%;
+    padding: 5px 20px;
+}
+
+.first .skills img{
+    padding: 10px 10px;
+}
+
+img .logo{
+    cursor: pointer;
+}
+
+.landing{
+    background: url(/workstation_vertical.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+.landing .skills img{
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.landing .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.landing .img{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: start;   
+}
+
+@media screen and (min-width: 600px) {
+    .landing{ 
+        background: url(/workstation_horizontal.png); 
+        background-size: cover;
+        background-position:center;
+        background-attachment: fixed;
+    }
+    
+    #first .inner h1{
+        margin-top: -2rem;
+        font-size: 7.5rem;
+    }
+    
+    .para_content{
+        font-size: 1.25rem;
+        color: rgb(220, 227, 233);
+        line-height: 7vh;
+    }
+
+    .second .inner{
+        padding: 0 4.5rem;
+    }
+
+    
+    section{
+        height: 100vh;
+    }
+    
+}
