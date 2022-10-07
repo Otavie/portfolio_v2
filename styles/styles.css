@@ -203,7 +203,7 @@ img .logo {
 
 @media screen and (min-width: 600px) {
   .landing {
-    background: url(img/workstation_horizontal_web.png);
+    background: url(../img/workstation_horizontal_web.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
