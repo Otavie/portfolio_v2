@@ -203,6 +203,7 @@ img .logo {
 
 @media screen and (min-width: 600px) {
   .landing {
+    background: url(https://otavie.github.io/portfolio_v2/workstation_vertical.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
