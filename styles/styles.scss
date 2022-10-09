@@ -13,6 +13,10 @@
     font-family: 'Zen Kurenaido', sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -36,7 +40,7 @@ section:not(.first) {
 .last{ background-color:rgb(0, 191, 255); }
 
 .second .inner{
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .container{
@@ -59,26 +63,37 @@ section:not(.first) {
     height: 100vh;
 }
 
+.inner .writeup h3{
+    letter-spacing: 0.4rem;
+    margin-top: -1.9rem;  
+    font-size: 1.16rem;  
+}
+
+
 .inner .writeup h1{
-    color: rgba(255, 255, 255, 0.37);
-    font-size: 7.5rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 8rem;
+    margin-top: -10vh;
     text-align: center;
     padding: 1px;
+    color: white;
 }
 
 .inner .writeup h3{
     text-align: center;
-    color: rgba(255, 255, 255, 0.897);
-    letter-spacing: 0.4rem;
-    margin-top: -2.25rem;    
+    color: white;
+    // letter-spacing: 0.4rem;
+    margin-top: -1.9rem;    
     text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
     text-shadow: 0 0 .125rem rgba(255, 255, 255, 0.962);
+    font-size: 0.85rem;
+    font-family: 'Oxanium', cursive;
+    // letter-spacing: 0.4rem;
+    // font-size: 1rem;  
 }
 
 .letterU{
-    text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oxanium', cursive;
     text-shadow: 0 0 .125rem rgba(255, 255, 255, 0.962);
 }
 
@@ -97,7 +112,7 @@ section:not(.first) {
 }
 
 .para_content{
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     text-shadow: 0px 0.063rem 1.25rem rgba(0, 0, 0, 1);
     line-height: 5vh;
     font-weight: 600;
@@ -121,6 +136,10 @@ section:not(.first) {
     padding: 5px 20px;
 }
 
+.logo{
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
 .first .skills img{
     padding: 10px 10px;
 }
@@ -130,11 +149,13 @@ img .logo{
 }
 
 .landing{
-    background: url(https://otavie.github.io/portfolio_v2/img/workstation_vertical_web.png);
+    // background: url(https://otavie.github.io/portfolio_v2/img/v1.png);
+    background: url(../img/v1.png);
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
     width: 100vw;
+    transition: all 2s ease;
 }
 
 .landing .skills img{
@@ -162,32 +183,75 @@ img .logo{
     align-items: start;   
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {    
+    .second .inner{
+        padding: 0 0rem;
+    }
+
+    .logo{
+        background-color: rgba(255, 255, 255, 0.61);
+    }
+    
+    .first .skills img{
+        padding: 10px 10px;
+    }
+    
     .landing{ 
-        background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
+        // background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
+        background: url(../img/h1.png);
         background-size: cover;
         background-position:center;
         background-attachment: fixed;
     }
-    
-    #first .inner h1{
-        margin-top: -2rem;
-        font-size: 7.5rem;
+
+    .inner .writeup h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 10rem;
     }
-    
+
+    .inner .writeup h3{
+        letter-spacing: 0.4rem;
+        margin-top: -2.5rem;  
+        font-size: 1.16rem;  
+    }
+ 
     .para_content{
         font-size: 1.25rem;
         color: rgb(220, 227, 233);
         line-height: 7vh;
+        padding: 0 4rem;
     }
-
-    .second .inner{
-        padding: 0 4.5rem;
-    }
-
     
     section{
         height: 100vh;
     }
-    
+
+    .inner h1{
+        font-size: 4rem;
+    }
+   
+}
+
+@media screen and (min-width: 800px) {
+    .para_content{
+        font-size: 1.55rem;
+        color: rgb(220, 227, 233);
+    }
+
+    .inner h1{
+        font-size: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    #second p .inner .para_content{
+        font-size: 1.75rem;
+        color: rgb(220, 227, 233);
+        padding: 0 0rem;
+    }
+
+    .inner h1{
+        font-size: 6rem;
+    }
 }
