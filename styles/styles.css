@@ -12,10 +12,6 @@
   font-family: 'Zen Kurenaido', sans-serif;
 }
 
-body {
-  background-color: black;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -171,13 +167,13 @@ img .logo {
 }
 
 .landing {
-  background: url(https://otavie.github.io/portfolio_v2/img/v1.png);
+  background: url(../img/v1.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100vw;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out;
 }
 
 .landing .skills img {
@@ -229,10 +225,12 @@ img .logo {
     padding: 10px 10px;
   }
   .landing {
-    background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
+    background: url(../img/h1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    -webkit-transition: background 2s ease-in-out;
+    transition: background 2s ease-in-out;
   }
   .inner .writeup h1 {
     font-family: 'Satisfy', cursive;

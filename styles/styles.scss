@@ -13,9 +13,9 @@
     font-family: 'Zen Kurenaido', sans-serif;
 }
 
-body{
-    background-color: black;
-}
+// body{
+//     background-color: black;
+// }
 
 html{
     scroll-behavior: smooth;
@@ -82,14 +82,11 @@ section:not(.first) {
 .inner .writeup h3{
     text-align: center;
     color: white;
-    // letter-spacing: 0.4rem;
     margin-top: -1.9rem;    
     text-transform: uppercase;
     text-shadow: 0 0 .125rem rgba(255, 255, 255, 0.962);
     font-size: 0.85rem;
     font-family: 'Oxanium', cursive;
-    // letter-spacing: 0.4rem;
-    // font-size: 1rem;  
 }
 
 .letterU{
@@ -149,13 +146,13 @@ img .logo{
 }
 
 .landing{
-    background: url(https://otavie.github.io/portfolio_v2/img/v1.png);
-    // background: url(../img/v1.png);
+    // background: url(https://otavie.github.io/portfolio_v2/img/v1.png);
+    background: url(../img/v1.png);
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
     width: 100vw;
-    transition: all 2s ease;
+    transition: background 2s ease-in-out;
 }
 
 .landing .skills img{
@@ -197,11 +194,12 @@ img .logo{
     }
     
     .landing{ 
-        background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
-        // background: url(../img/h1.png);
+        // background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
+        background: url(../img/h1.png);
         background-size: cover;
         background-position:center;
         background-attachment: fixed;
+        transition: background 2s ease-in-out;
     }
 
     .inner .writeup h1{
