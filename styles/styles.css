@@ -171,7 +171,7 @@ img .logo {
 }
 
 .landing {
-  background: url(../img/v1.png);
+  background: url(https://otavie.github.io/portfolio_v2/img/v1.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -229,7 +229,7 @@ img .logo {
     padding: 10px 10px;
   }
   .landing {
-    background: url(../img/h1.png);
+    background: url(https://otavie.github.io/portfolio_v2/img/workstation_horizontal_web.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
