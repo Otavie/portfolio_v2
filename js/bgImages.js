@@ -25,12 +25,30 @@ function imagesV (){
 
 var mediaQuery = window.matchMedia("(min-width: 600px)");
 
-function changeBg(){
+// function changeBg(){
+//     if (mediaQuery.matches){
+//         imagesH();
+//     }else{
+//         imagesV();
+//     }
+// }
+
+// window.onload = changeBg();
+
+function bgChanger(){
     if (mediaQuery.matches){
-        imagesH();
+        setTimeout(function(){
+            landing.style.transition = 'background 2s ease-in-out';
+            const i = Math.floor(Math.random() * imgH.length);
+            landing.style.backgroundImage = 'url('+imgH[i]+')';
+        }, 4000);
     }else{
-        imagesV();
+        setTimeout(function(){
+            landing.style.transition = 'background 2s ease-in-out';
+            const j = Math.floor(Math.random() * imgH.length);
+            landing.style.backgroundImage = 'url('+imgV[j]+')';
+        }, 4000);
     }
 }
 
-window.onload = changeBg();
+window.onload = bgChanger;
