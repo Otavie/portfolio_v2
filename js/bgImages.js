@@ -6,10 +6,10 @@ imgV = [
     'https://otavie.github.io/portfolio_v2/img/v4.png'
 ];
 imgH = [
-    'https://otavie.github.io/portfolio_v2/img/h1.png',
-    'https://otavie.github.io/portfolio_v2/img/h2.png',
-    'https://otavie.github.io/portfolio_v2/img/h3.png',
-    'https://otavie.github.io/portfolio_v2/img/h4.png'
+    '../img/h1.png', 
+    '../img/h2.png', 
+    '../img/h3.jpg', 
+    '../img/h4.jpg'
 ];
 
 
@@ -27,19 +27,10 @@ var mediaQuery = window.matchMedia("(min-width: 600px)");
 
 function changeBg(){
     if (mediaQuery.matches){
-        clearInterval(imagesV);
-        setInterval(imagesH, 4000);
-        
-    }
-}
-
-function changeBg_T(){
-    if (!(mediaQuery.matches)){
-        clearInterval(imagesH);
-        setInterval(imagesV, 4000);
-        
+        imagesH();
+    }else{
+        imagesV();
     }
 }
 
 window.onload = changeBg();
-window.onload = changeBg_T();
