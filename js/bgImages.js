@@ -12,7 +12,6 @@ imgH = [
     'https://otavie.github.io/portfolio_v2/img/h4.jpg'
 ];
 
-
 function imagesH (){
     const i = Math.floor(Math.random() * imgH.length);
     landing.style.backgroundImage = 'url('+imgH[i]+')';
@@ -20,35 +19,17 @@ function imagesH (){
 
 function imagesV (){
     const j = Math.floor(Math.random() * imgV.length);
-    landing.style.backgroundImage = 'url('+imgH[j]+')';
+    landing.style.backgroundImage = 'url('+imgV[j]+')';
 }
 
 var mediaQuery = window.matchMedia("(min-width: 600px)");
 
-// function changeBg(){
-//     if (mediaQuery.matches){
-//         imagesH();
-//     }else{
-//         imagesV();
-//     }
-// }
-
-// window.onload = changeBg();
-
-function bgChanger(){
-    if (mediaQuery.matches){
-        setTimeout(function(){
-            landing.style.transition = 'background 2s ease-in-out';
-            const i = Math.floor(Math.random() * imgH.length);
-            landing.style.backgroundImage = 'url('+imgH[i]+')';
-        }, 4000);
-    }else{
-        setTimeout(function(){
-            landing.style.transition = 'background 2s ease-in-out';
-            const j = Math.floor(Math.random() * imgH.length);
-            landing.style.backgroundImage = 'url('+imgV[j]+')';
-        }, 4000);
+if (mediaQuery.matches){
+    window.onload = function(){
+        imagesH();
+    }
+}else{
+    window.onload = function(){
+        imagesV();
     }
 }
-
-window.onload = bgChanger;
