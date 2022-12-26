@@ -963,9 +963,7 @@ form{
 @media screen and (max-width: 395px) {
     #send-email-button{
         padding: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 53px;
+        bottom: 20px;
         z-index: 2;
         box-shadow: 1px 0px 5px black, 0px 0px 1px black;
     }
