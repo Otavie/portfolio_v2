@@ -355,7 +355,7 @@ h2.subtitle {
 
 .first img {
   width: 7rem;
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 1rem;
   -webkit-box-shadow: 0px 0.063rem 0.25rem rgba(255, 255, 255, 0.61);
@@ -633,7 +633,7 @@ img .logo {
 
 #footer p.copyright {
   position: absolute;
-  margin-top: 92vh;
+  margin-top: 85vh;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -657,7 +657,7 @@ img .logo {
   opacity: 0;
   padding: 6px 50px;
   border-top: none;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 200px);
   -webkit-transition: -webkit-clip-path 1s ease-in;
   transition: -webkit-clip-path 1s ease-in;
   transition: clip-path 1s ease-in;
@@ -684,7 +684,7 @@ img .logo {
   right: 20px;
   padding: 10px 12px;
   position: absolute;
-  bottom: -10px;
+  bottom: 30px;
   color: #000;
   background-color: goldenrod;
   font-size: 17px;
