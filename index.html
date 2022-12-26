@@ -4,65 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>otavie</title>
+    <title>Otavie</title>
     <link rel="icon" href="img/favicon.svg">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script defer src="observer.js"></script>
 </head>
 <body id="body">
     <main class="container">
-        <section class="section first" id="first">
+        <section class="first" id="first" data-section-name="first">
             <div id="outside_logo">
-                <a href="index.html"><img class="logo" src="img/design_with_otavie.svg"></a>
+                <a href="index.html"><img class="logo" src="img/otavieLogo.svg"></a>
             </div>
             <div class="inner landing">
                 <div class="writeup">
                     <h1>Otavie</h1>
-                    <h3><span class="letterU" style="padding-left: 0.4rem;">U</span>I/UX<span class="vertical_line">|</span>Web Dev<span class="vertical_line">|</span>Python </h3>
+                    <h3><span class="letterW" style="padding-left: 0.4rem; font-weight: bold;">F</span>rontend Developer</h3>
                 </div>                
                 <div class="skills">
                     <img class="css3" src="img/css3.svg">
                     <img class="html5" src="img/html5.svg">
-                    <img class="git" src="img/git.svg">
-                    <img class="vuejs" src="img/vuejs.svg">
-                    <img class="github" src="img/github.svg">
                     <img class="javascript" src="img/javascript.svg">
+                    <img class="sass" src="img/sass.svg">
+                    <img class="git" src="img/git.svg">
+                    <img class="github" src="img/github.svg">
                     <img class="reactnative" src="img/reactnative.svg">
-                    <img class="python" src="img/python.svg">
+                    <img class="vuejs" src="img/vuejs.svg">
                 </div>
                         
             </div>
         </section>
 
-        <section class="section second" id="second">
+        <section class="second" data-section-name="second">
             <div class="inner">
                 <h1> <span class="otavie" style="font-family: 'Oxanium', cursive; font-weight: 400px;"><span class="lt">&lt;</span> Otavie/ <span class="lt">&gt;</span></span></h1>
-                <p class="para_content">
-                    A UI/UX Designer and a Frontend Developer. <br>
-                    I build beautiful websites/web applications with HTML, CSS, JavaScript and its frameworks <wbr> (React <wbr> and <wbr> Vue).<br>
-                    Python and JavaScript are my programming language of choice. 
-                    I have basic understanding of C, PHP and Java.<br>
-                    At present, Otavie is a master's student in Computer Science at Covenant University (CU), Ota, Nigeria researching in the field of Digital Twins (DTs) and Recommendation System (RSs), with great bibliometric analysis and science mapping skills.
-
+                <h2 class="subtitle">A Frontend Developer</h2>
+                <p class="para_content desktop">
+                    A front-end web developer that can integrate the interactive and visual aspects of excellently and tastefully created UI/UX designs into working applications. Otavie can collaborate with teams of backend developers and UI/UX designers to guarantee that users have the utmost experience when using a website or web application.
                 </p>
+
+                <p class="para_content mobile">
+                    A front-end web developer who can turn UI/UX designs into working apps. Otavie can collaborate with UI/UX designers and backend developers to ensure the optimal user experience.
+                </p>
+                <div class="skillsbars_1">
+                    <ul class="skillsbars_2">
+                        <h3 class="my_skills">My Skills</h3>
+                        <li>
+                            <h4>HTML, CSS and SASS</h4>
+                            <span class="bars"> <span class="html_group bar"></span> </span>
+                        </li>
+
+                        <li>
+                            <h4>JavaScript, Vue and React</h4>
+                            <span class="bars"> <span class="javascript_group bar"></span> </span>
+                        </li>
+
+                        <li>
+                            <h4>Git and Github</h4>
+                            <span class="bars"> <span class="git_group bar"></span> </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="section third" id="third">
+        <section class="third" data-section-name="third">
             <div class="inner">
-                <h1> <span class="otavie" style="font-family: 'Oxanium', cursive; font-weight: 400px;"><span class="lt">&lt;</span> Projects / <span class="lt">&gt;</span></span></h1>
+                <h1> <span class="otavie" style="font-family: 'Oxanium', cursive; font-weight: 400px;"><span class="curly-brace">"</span> Projects <span class="curly-brace">"</span></span></h1>
+
+                <div id="project-container">
+                    <div id="project-content">
+                        
+                        <div id="project-button-container">
+                            <button class="project-button active-project" data-project="project-1">Project 1</button>
+                            <button class="project-button" data-project="project-2">Project 2</button>
+                            <button class="project-button" data-project="project-3">Project 3</button>
+                        </div>
+                
+                        <div id="project-1" class="project-content">
+                            <h3>Portfolio v1</h3>
+                            <div class="project-container">
+                                <div class="project-image">
+                                    <img src="img/p1.jpg" alt="Portfolio v1" onclick="window.open('https://otavie.github.io/portfolio_v1')">
+                                </div>
+
+                                <div class="project-write">
+                                    <div class="project-writer__inner">
+                                        <h3 class="project-description">Description</h3>
+                                        <p>
+                                            First portfolio. It was designed on two pages - a beautiful landing page and the main website that is visually appealing and smooth usage. <br><span class="tools-used">HTML | CSS | JS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="project-2" class="project-content">
+                            <h3>Portfolio v2</h3>
+                            <div class="project-container">
+                                <div class="project-image">
+                                    <img src="img/p2.jpg" alt="Portfolio v2" onclick="window.open('https://otavie.github.io/portfolio_v2')">
+                                </div>
+
+                                <div class="project-write">
+                                    <div class="project-writer__inner">
+                                        <h3 class="project-description">Description</h3>
+                                        <p>
+                                            A one-page portfolio website. Each page is designed to fit within the height of the viewport, and you can only see one page per time.<br><span class="tools-used">HTML | CSS | JS | JS Lib</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="project-3" class="project-content">
+                            <h3>HSL Website</h3>
+                            <div class="project-container">
+                                <div class="project-image">
+                                    <img src="img/p3.jpg" alt="HSL Website">
+                                </div>
+
+                                <div class="project-write">
+                                    <div class="project-writer__inner">
+                                        <h3 class="project-description">Description</h3>
+                                        <p>
+                                            <span class="work-in-progress">Work in Progress</span><br>A one-page website for a start-up hub based in Covenant University. This is just a template... <br><span class="tools-used">HTML | CSS | JS | JS Lib</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
                 
             </div>
         </section>
 
-        <section class="section last" id="last">
-            <div class="inner">
-                
+        <section class="fourth" id="footer" data-section-name="fourth">
+            <div id="footer-container">
+                <div id="footer-content">
+
+                    <button id="send-email-button"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+            
+                    <div id="tab-1" class="tab-content">
+                        <div id="contact-me">
+                            <div id="non-socials">
+                                <div id="non-socials__left">
+                                    <p id="front-end-footer">Front-end Developer</p>
+                                    <p>+234 (0) 70-650-694-95</p>
+                                    <p>otavieokuoyo@gmail.com</p>
+                                </div>
+                                <div id="non-socials__right">
+                                    <p>HTML + (S)CSS</p>
+                                    <p>JS + React + Vue</p>
+                                    <p>Git + GitHub (VCS)</p>
+                                </div>
+                            </div>
+                            <div id="socials">
+                                <i class="fa-brands fa-linkedin-in linkedin-logo"></i>
+                                <i class="fa-brands fa-github github-logo" id="github-logo"></i>
+                            </div>
+                            <a class="my-resume" href="https://drive.google.com/file/d/1m_JSx_2XDnEaePOk4mYuMbje-iZpkcDv/view?usp=share_link"><span class="view">View</span> Resume</a>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <div class="contact_area_info"  id="contact_area_form">
+                            <form action="https://formsubmit.co/d69dab3d73da7874a8c11f25cedec036" method="POST" id="the_form">
+                              <input type="text" name="Name" placeholder="Your full name" required>
+                              <input type="text" name="Subject" placeholder="Your subject" required>
+                              <input type="email" name="Email" placeholder="Your email address" required>
+                              <textarea name="Message" placeholder="Your message" required></textarea>
+                              <button type="submit" id="send_email">Send Email</button>
+                            </form>
+                        </div>
+                    </div>
+            
+                </div>
             </div>
+            <p class="copyright">All rights reserved &copy;. Otavie 2022</p>
         </section>
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scroll.js"></script>
     <script src="bgImages.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js.js"></script>
+    <script src="tabs.js"></script>
 </body>
 </html>
