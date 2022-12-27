@@ -1,3 +1,7 @@
+//The Image in CSS shows off first. 
+//Then it goes to the windowsLoad function and load the image there
+//Finally, the 
+
 const landing = document.querySelector('.landing');
 imgV = [
     // 'https://otavie.github.io/portfolio_v2/img/v1.jpg',
@@ -76,14 +80,14 @@ function windowLoads(){
         landing.style.transition = 'background 0.15s ease-in-out';
         landing.style.transitionDelay = '0s';
         // landing.style.backgroundImage = "url('/img/h.jpg')";
-        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/h1.jpg')";
+        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/h5.jpg')";
         clearTimeout(timeout);
         timeout = setTimeout(imagesH, delay);
     }else{
         landing.style.transition = 'background 0.15s ease-in-out';
         landing.style.transitionDelay = '0s';
         // landing.style.backgroundImage = "url('/img/v.jpg')";
-        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/v1.jpg')";
+        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/v5.jpg')";
         clearTimeout(timeout);
         timeout = setTimeout(imagesV, delay);
     }
