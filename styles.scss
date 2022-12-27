@@ -531,7 +531,7 @@ img .logo{
     position: absolute;
     bottom: 30px;
     color: #fff;
-    background-color: #5B63B7;
+    background-color: transparent;
     border-radius: 50%;
     transition: background ease-in-out 750ms, color ease-in-out 750ms;
     border: none;
@@ -555,7 +555,7 @@ i.fa-solid.fa-x{
 
 #send-email-button:hover{
     color: #ccc;
-    background-color: #5B63B7;
+    background-color: transparent;
     border: none;
     outline: none
 }
