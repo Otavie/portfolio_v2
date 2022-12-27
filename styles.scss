@@ -295,8 +295,8 @@ img .logo{
 }
 
 .landing{
-    background: url('https://otavie.github.io/portfolio_v2/img/v.jpg');
-    // background: url(/img/v.jpg);
+    // background: url('https://otavie.github.io/portfolio_v2/img/v.jpg');
+    background: url('/img/v.jpg');
     background-size: cover;
     background-size: cover;
     background-position:center;
@@ -366,7 +366,6 @@ img .logo{
     border: none;
     outline: none;
     background-color: #5B63B7;
-    // border-left: 1px solid rgb(255, 255, 255);
     font-family: 'Satisfy', cursive;
     font-size: 1.1rem;
     color: #ccc;
@@ -508,10 +507,10 @@ img .logo{
     opacity: 0;
     padding: 6px 50px;
     border-top: none;
-    height: calc(100vh - 175px);   
+    height: calc(100vh - 175px);  
     transition: clip-path 1s ease-in;
     position: absolute;
-    background-color: goldenrod;
+    background-color: black;
     clip-path: circle(0% at 100% 100%);
     z-index: 0;
 }
@@ -532,14 +531,19 @@ img .logo{
     bottom: 30px;
     color: #fff;
     background-color: transparent;
-    border-radius: 50%;
     transition: background ease-in-out 750ms, color ease-in-out 750ms;
     border: none;
     outline: none;
+    box-shadow: none;
+}
+
+i{
+    box-shadow: none;
 }
 
 i.fa-solid{
     background-color: #000;
+    box-shadow: none;
 }
 
 i.fa.fa-envelope{
@@ -551,6 +555,9 @@ i.fa-solid.fa-x{
     font-size: 1.5rem;
     margin-right: 5px;
     background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
 
 #send-email-button:hover{
@@ -576,25 +583,14 @@ i.fa-solid.fa-x{
         margin-bottom: 40px;
     }
 
-    // h3{
-    //     font-family: 'Poppins', sans-serif;
-    //     font-family: 'Oxanium', cursive;
-    //     font-family: 'Satisfy', cursive;
-    //     font-size: 1.5rem;
-    //     font-size: 1.35rem;
-    //     font-weight: 400;
-    //     text-align: center;
-    //     color: rgba(255, 255, 255, 0.678);
-    // }
-
     p{
         font-family: 'Poppins', sans-serif;
         font-weight: 100;
         line-height: 1.5rem;
         font-size: 0.85rem;
-        color: black;
+        color: white;
         font-weight: 400;
-        text-shadow: 1px 0 5px rgba(255, 255, 255, 0.5);
+        // text-shadow: 1px 0 5px rgba(255, 255, 255, 0.5);
         text-align: center;
     }
 }
@@ -623,22 +619,22 @@ p#front-end-footer{
 .github-logo{
     display: inline-block;
     border-radius: 10px;
-    color: goldenrod;
-    background-color: #5B63B7;
+    color: black;
+    background-color: #ccc;
     padding: 8px 10px;
     transition: background ease-in-out 1000ms, color ease-in-out 1000ms;
 }
 
 .linkedin-logo:hover,
 .github-logo:hover{
-    background-color: goldenrod;
-    color: #5B63B7;
+    background-color: black;
+    color: #fff;
 }
 
 a.my-resume{
     margin-top: 0.75rem;
     text-decoration: none;
-    color: #000;
+    color: #ccc;
     font-weight: 500;
     font-size: 1.1rem;
     font-family: 'Oxanium', cursive;
@@ -653,13 +649,12 @@ a.my-resume:not(.view):hover{
     font-size: 0.9rem;
     font-weight: 600;
     color: #ccc;
-    color: rgba(0, 0, 0, 0.65);
     font-family: 'Oxanium', cursive;
 }
 
 
 ::placeholder{
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(147, 143, 143);
 }
 
 .contact_area_info{
@@ -675,23 +670,27 @@ a.my-resume:not(.view):hover{
         font-weight: 600;
         font-size: 18px;
         letter-spacing: 0.05em;
-        color: #fff;
-        text-shadow: 0px 1px 0px #000;
-        background: #5B63B7;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75), -2px -2px 20px rgba(0, 0, 0, 0.45);
+        color: rgb(173, 167, 167);
+        background: #000;
         border-radius: 15px;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+        border-top: none;
         cursor: pointer;
-        border: none;
         padding: 10px 30px;
-        transition: all ease-in-out 1000ms;
+        transition: all ease-in-out 500ms;
     }
 
     button:hover{
-        transform: translateY(5%);
-        background: goldenrod;
-        color: #000;
+        background: #000;
+        color: #fff;
         text-shadow: none;
-        font-weight: 300;
+        font-weight: 600;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid white;
     }
 }
   
@@ -716,7 +715,6 @@ form{
 
     input, textarea{
         color: white;
-        color: rgba(0, 0, 0, 0.853);
         font-weight: 400;
         font-size: 15px;
         border-radius: 5px;
@@ -724,10 +722,9 @@ form{
         outline: none;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid #5B63B7;
+        border-bottom: 1px solid rgb(173, 167, 167);
         font-family: 'Oxanium', cursive;
         letter-spacing: 1px;
-        // margin: 12px 0px;
         margin: 10px 0px;
     }
   
@@ -744,7 +741,7 @@ form{
         height: 200px;
         max-height: 200px;
         line-height: 22px;
-        width: 320px;
+        width: 300px;
     }
 }
   
@@ -763,8 +760,8 @@ form{
     
     
     .landing{ 
-        background: url('https://otavie.github.io/portfolio_v2/img/h.jpg');
-        // background: url(/img/h.jpg);
+        // background: url('https://otavie.github.io/portfolio_v2/img/h.jpg');
+        background: url('/img/h.jpg');
         background-size: cover;
         background-position:center;
         background-attachment: fixed;
@@ -851,13 +848,6 @@ form{
         width: 85vw;
     }
 
-    // #project-button-container{
-    
-    // }
-
-    // .project-button{
-    
-    // }
 
 
 
@@ -887,7 +877,7 @@ form{
     #the_form{
         input{
             height: 18px;
-            width: 500px;
+            width: 520px;
           }
         
           textarea{
@@ -962,6 +952,7 @@ form{
         z-index: 2;
         border: none;
         outline: none;
+        padding: 0px;
     }
 
 }

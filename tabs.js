@@ -6,14 +6,12 @@ function toggleTab() {
         if (item.style.opacity === '1') {
             item.style.opacity = '0';
             item.style.transitionDuration = '1s';
-            // this.innerHTML = 'Send Email';
             this.innerHTML = '<i class="fa fa-envelope" aria-hidden="true"></i>';
             item.classList.add('active');
         } else {
             item.style.opacity = '1';
             item.style.transitionDuration = '1s';
-            // this.innerHTML = '&nbsp;X&nbsp;';
-            this.innerHTML = '<i class="fa-solid fa-x"></i>';
+            this.innerHTML = '<i class="fa-solid fa-x" aria-hidden="true"></i>';
             item.classList.add('active');
     }
     });
