@@ -378,7 +378,7 @@ img .logo {
 }
 
 .landing {
-  background: url("/img/v2.jpg");
+  background: url("https://otavie.github.io/portfolio_v2/img/v2.jpg");
   background-size: cover;
   background-size: cover;
   background-position: center;
@@ -955,7 +955,7 @@ form {
     margin-bottom: 40px;
   }
   .landing {
-    background: url("/img/h2.jpg");
+    background: url("https://otavie.github.io/portfolio_v2/img/h2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
