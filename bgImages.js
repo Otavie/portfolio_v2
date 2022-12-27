@@ -80,14 +80,14 @@ function windowLoads(){
         landing.style.transition = 'background 0.15s ease-in-out';
         landing.style.transitionDelay = '0s';
         // landing.style.backgroundImage = "url('/img/h.jpg')";
-        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/h5.jpg')";
+        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/h.jpg')";
         clearTimeout(timeout);
         timeout = setTimeout(imagesH, delay);
     }else{
         landing.style.transition = 'background 0.15s ease-in-out';
         landing.style.transitionDelay = '0s';
         // landing.style.backgroundImage = "url('/img/v.jpg')";
-        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/v5.jpg')";
+        landing.style.backgroundImage = "url('https://otavie.github.io/portfolio_v2/img/v.jpg')";
         clearTimeout(timeout);
         timeout = setTimeout(imagesV, delay);
     }
