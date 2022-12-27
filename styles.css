@@ -207,7 +207,7 @@ section {
           transform: translateX(-100%);
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
-  width: 95%;
+  width: 85%;
   -webkit-animation: html_group 3s;
           animation: html_group 3s;
 }
@@ -217,7 +217,7 @@ section {
           transform: translateX(-100%);
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
-  width: 75%;
+  width: 70%;
   -webkit-animation: javascript_group 3s;
           animation: javascript_group 3s;
 }
@@ -227,7 +227,7 @@ section {
           transform: translateX(-100%);
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
-  width: 85%;
+  width: 80%;
   -webkit-animation: git_group 3s;
           animation: git_group 3s;
 }
@@ -237,7 +237,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 95%;
+    width: 85%;
   }
 }
 
@@ -246,7 +246,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 95%;
+    width: 85%;
   }
 }
 
@@ -255,7 +255,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -264,7 +264,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -273,7 +273,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -282,7 +282,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -378,7 +378,7 @@ img .logo {
 }
 
 .landing {
-  background: url(https://otavie.github.io/portfolio_v2/img/v.jpg);
+  background: url(/img/v.jpg);
   background-size: cover;
   background-size: cover;
   background-position: center;
@@ -470,7 +470,6 @@ img .logo {
   border: none;
   outline: none;
   background-color: #5B63B7;
-  border-left: 1px solid white;
   font-family: 'Satisfy', cursive;
   font-size: 1.1rem;
   color: #ccc;
@@ -484,16 +483,8 @@ img .logo {
 }
 
 .project-button.active-project {
-  background-color: #000;
-  background-color: #3f79ac;
-  background-color: #5B63B7;
-  background-color: #7b83d8;
   background-color: #5b65d4;
   color: #fff;
-}
-
-.project-button:last-child {
-  border-right: 1px solid white;
 }
 
 .project-container {
@@ -657,7 +648,7 @@ img .logo {
   opacity: 0;
   padding: 6px 50px;
   border-top: none;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 175px);
   -webkit-transition: -webkit-clip-path 1s ease-in;
   transition: -webkit-clip-path 1s ease-in;
   transition: clip-path 1s ease-in;
@@ -682,28 +673,37 @@ img .logo {
 #send-email-button {
   cursor: pointer;
   right: 20px;
-  padding: 10px 12px;
   position: absolute;
   bottom: 30px;
-  color: #000;
-  background-color: goldenrod;
-  font-size: 17px;
-  font-size: 0.7rem;
+  color: #fff;
+  background-color: #5B63B7;
   border-radius: 50%;
   -webkit-transition: background ease-in-out 750ms, color ease-in-out 750ms;
   transition: background ease-in-out 750ms, color ease-in-out 750ms;
   border: none;
+  outline: none;
+}
+
+i.fa-solid {
+  background-color: #000;
 }
 
 i.fa.fa-envelope {
-  font-size: 0.8rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+i.fa-solid.fa-x {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  background-color: transparent;
 }
 
 #send-email-button:hover {
   color: #ccc;
   background-color: #5B63B7;
-  -webkit-box-shadow: 0px -1px 2px #000;
-          box-shadow: 0px -1px 2px #000;
+  border: none;
+  outline: none;
 }
 
 #contact-me {
@@ -722,7 +722,6 @@ i.fa.fa-envelope {
           flex-direction: column;
   height: 100%;
   width: 100%;
-  font-family: 'Oxanium', cursive;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -738,26 +737,11 @@ i.fa.fa-envelope {
   margin-bottom: 40px;
 }
 
-#contact-me h3 {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Oxanium', cursive;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.5rem;
-  font-size: 1.35rem;
-  font-weight: 400;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.678);
-}
-
 #contact-me p {
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
   line-height: 1.5rem;
   font-size: 0.85rem;
-  color: #ED5E93;
-  color: #deced4;
-  color: rgba(222, 206, 212, 0.832);
-  color: #5B63B7;
   color: black;
   font-weight: 400;
   text-shadow: 1px 0 5px rgba(255, 255, 255, 0.5);
@@ -896,7 +880,7 @@ form {
 }
 
 #the_form {
-  margin-top: 40px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,6 +891,11 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 220px);
+  width: 100%;
 }
 
 #the_form input, #the_form textarea {
@@ -922,7 +911,7 @@ form {
   border-bottom: 1px solid #5B63B7;
   font-family: 'Oxanium', cursive;
   letter-spacing: 1px;
-  margin: 12px 0px;
+  margin: 10px 0px;
 }
 
 #the_form input:focus, #the_form textarea:focus {
@@ -956,7 +945,7 @@ form {
     margin-bottom: 40px;
   }
   .landing {
-    background: url(https://otavie.github.io/portfolio_v2/img/h.jpg);
+    background: url(/img/h.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1116,10 +1105,9 @@ form {
 
 @media screen and (max-width: 395px) {
   #send-email-button {
-    padding: 10px;
-    bottom: 20px;
+    bottom: 25px;
     z-index: 2;
-    -webkit-box-shadow: 1px 0px 5px black, 0px 0px 1px black;
-            box-shadow: 1px 0px 5px black, 0px 0px 1px black;
+    border: none;
+    outline: none;
   }
 }

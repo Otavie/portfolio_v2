@@ -10,6 +10,6 @@ const observer = new IntersectionObserver(entries => {
    });
 })
 
-bars.forEach(b =>{
-    observer.observe(b)
+bars.forEach(skillBar =>{
+    observer.observe(skillBar)
 })

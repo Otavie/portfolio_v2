@@ -12,7 +12,8 @@ function toggleTab() {
         } else {
             item.style.opacity = '1';
             item.style.transitionDuration = '1s';
-            this.innerHTML = '&nbsp;X&nbsp;';
+            // this.innerHTML = '&nbsp;X&nbsp;';
+            this.innerHTML = '<i class="fa-solid fa-x"></i>';
             item.classList.add('active');
     }
     });
